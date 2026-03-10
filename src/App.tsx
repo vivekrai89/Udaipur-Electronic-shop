@@ -301,10 +301,7 @@ function App() {
                   expert guidance and best deals at E Home Electronics – Udaipur.
                 </p>
                 <div className="hero-actions">
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => navigateListing(undefined)}
-                  >
+                  <button className="btn btn-primary" onClick={() => navigateListing(undefined)}>
                     Browse All Products
                   </button>
                   <a
@@ -401,7 +398,7 @@ function App() {
 
         {view.type === 'detail' && selectedProduct && (
           <section className="detail">
-            <button className="back-link" onClick={navigateListing}>
+            <button className="back-link" onClick={() => navigateListing()}>
               ← Back to products
             </button>
             <div className="detail-layout glass">
@@ -468,4 +465,3 @@ function App() {
 }
 
 export default App
-
